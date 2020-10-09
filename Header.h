@@ -15,7 +15,7 @@ struct info
 {
   string club_name; 
   string city;
-  string score;  //int myint1 = std::stoi(str1); ïåðåâîä â ÷èñëî
+  string score;  
   fio couch;
 };
 
