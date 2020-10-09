@@ -1,10 +1,9 @@
-#pragma once
-#pragma once // 5 б е
-#include <iostream> // Подключаем заголовочный файл ввода-вывода
-#include <fstream> // Подключаем заголовочный файл для работы с файлами
-#include <string> // Подключаем заголовочный файл для работы со строками
-#include <ctime> // Подключаем заголовочный файл для работы со временем и датой
-using namespace std; // Подключаем пространство имен std
+#pragma once 
+#include <iostream> // РџРѕРґРєР»СЋС‡Р°РµРј Р·Р°РіРѕР»РѕРІРѕС‡РЅС‹Р№ С„Р°Р№Р» РІРІРѕРґР°-РІС‹РІРѕРґР°
+#include <fstream> // РџРѕРґРєР»СЋС‡Р°РµРј Р·Р°РіРѕР»РѕРІРѕС‡РЅС‹Р№ С„Р°Р№Р» РґР»СЏ СЂР°Р±РѕС‚С‹ СЃ С„Р°Р№Р»Р°РјРё
+#include <string> // РџРѕРґРєР»СЋС‡Р°РµРј Р·Р°РіРѕР»РѕРІРѕС‡РЅС‹Р№ С„Р°Р№Р» РґР»СЏ СЂР°Р±РѕС‚С‹ СЃРѕ СЃС‚СЂРѕРєР°РјРё
+#include <ctime> // РџРѕРґРєР»СЋС‡Р°РµРј Р·Р°РіРѕР»РѕРІРѕС‡РЅС‹Р№ С„Р°Р№Р» РґР»СЏ СЂР°Р±РѕС‚С‹ СЃРѕ РІСЂРµРјРµРЅРµРј Рё РґР°С‚РѕР№
+using namespace std; // РџРѕРґРєР»СЋС‡Р°РµРј РїСЂРѕСЃС‚СЂР°РЅСЃС‚РІРѕ РёРјРµРЅ std
 
 struct fio
 {
@@ -16,7 +15,7 @@ struct info
 {
   string club_name; 
   string city;
-  string score;  //int myint1 = std::stoi(str1); перевод в число
+  string score;  //int myint1 = std::stoi(str1); ГЇГҐГ°ГҐГўГ®Г¤ Гў Г·ГЁГ±Г«Г®
   fio couch;
 };
 
@@ -26,7 +25,7 @@ public:
   info team_data;
 };
 
-// Объявляеление функций
+// ГЋГЎГєГїГўГ«ГїГҐГ«ГҐГ­ГЁГҐ ГґГіГ­ГЄГ¶ГЁГ©
 int ClassInitialization(team* obj, int N);
 double Shakersort(team* object,int N);
 void siftDown(team* ar, int root, int bottom);
