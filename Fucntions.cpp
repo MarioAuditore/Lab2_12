@@ -76,14 +76,14 @@ inline bool operator>(team& a, team& b)
 }
 inline bool operator==(team& a, team& b)
 {
-	if (a.team_data.score == b.team_data.score)
+	if ((stoi(a.team_data.score) == stoi(b.team_data.score))
 		return true;
 	else
 		return false;
 }
 inline bool operator!=(team& a, team& b)// можно сделать еще как отрицание ==
 {
-	if (a.team_data.score != b.team_data.score)
+	if (stoi(a.team_data.score) != stoi(b.team_data.score))
 		return true;
 	else
 		return false;
