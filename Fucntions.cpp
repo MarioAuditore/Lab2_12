@@ -45,7 +45,7 @@ int ClassInitialization(team* obj, int N)
 		return 1;
 	}
 
-	//getline(MyFile, temp, '\n'); // Считываем строку названий столбцов
+	getline(MyFile, temp, '\n'); // Считываем строку названий столбцов
 	for (int i = 0; i < N; i++) {
 		getline(MyFile, obj[i].team_data.club_name, ';'); // Считываем последовательно ячейки csv файла(для это и ставились разделители ';')
 		getline(MyFile, obj[i].team_data.city, ';');
