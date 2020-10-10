@@ -25,7 +25,7 @@ public:
   info team_data;
 };
 
-// Îáúÿâëÿåëåíèå ôóíêöèé
+//  Объявляеление функций
 int ClassInitialization(team* obj, int N);
 double Shakersort(team* object,int N);
 void siftDown(team* ar, int root, int bottom);
