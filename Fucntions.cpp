@@ -38,7 +38,7 @@ int ClassInitialization(team* obj, int N)
 {
 	ifstream MyFile; // Объект для обравотки файла(файловый ввод)
 	string temp; // Временная переменная для чтения строки названий столбцов
-	MyFile.open("C:\\Users\\Elf\\Desktop\\файлы\\C++\\Лабы\\лаба1_12вар\\SortedDataBase.csv", ios_base::in); // Открываем файл для чтения
+	MyFile.open("C:\\Users\\Elf\\Desktop\\файлы\\C++\\Лабы\\лаба1_12вар\\DataBase.csv", ios_base::in); // Открываем файл для чтения
 	if (!MyFile.is_open()) // Проверка существования файла DataBase.csv
 	{
 		cout << "Файл с базой данных DataBase.csv не был найден." << endl; 
